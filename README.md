@@ -40,9 +40,9 @@ sudo cp react /usr/local/bin/react
 
 ## 💡 Usage
 
-```bash
-// Create a JSX component
+### Create a JSX component
 
+```bash
 react make:component Button
 ```
 
@@ -54,4 +54,50 @@ src/components/Button/
 └── Button.module.css
 ```
 
+### Create a TSX component (for TypeScript projects)
+
+```bash
+react make:component Button --ts
+```
+
+This will generate:
+
+```css
+src/components/Button/
+├── Button.tsx
+└── Button.module.css
+```
+
+## 🪟 Windows — How to use it?
+
+### ✅ Requirements
+- [Git for Windows](https://git-scm.com/downloads/win)
+- Use Git Bash (installed automatically with Git)
+
+### ✅ Steps
+- Open Git Bash
+- Follow the installation steps (clone, make executable)
+- Open Git Bash and edit your .bashrc or .bash_profile:
+  
+```bash
+nano ~/.bashrc
+```
+
+- Add a line like this (replace the path with where your script is) - Remember to use Unix-style paths (/c/Users/...) in Git Bash:
+  
+```bash
+export PATH="$PATH:/c/path_to_folder_with_script"
+```
+
+- Save and reload:
+
+```bash
+source ~/.bashrc
+```
+
+Now you can run:
+
+```bash
+react make:component Button
+```
 
