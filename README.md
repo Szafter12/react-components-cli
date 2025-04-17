@@ -42,6 +42,7 @@ sudo cp react /usr/local/bin/react
 
 ```bash
 // Create a JSX component
+
 react make:component Button
 ```
 
