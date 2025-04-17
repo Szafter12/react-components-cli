@@ -1,6 +1,6 @@
 # ⚛️ react — CLI for generating React components
 
-A simple Bash script that helps you quickly scaffold React components inside the `src/components` directory. Supports both JSX and TypeScript (TSX) with modular CSS.
+A simple Bash script that helps you quickly create React components inside the `src/components` directory. Supports both JSX and TypeScript (TSX) with modular CSS.
 
 ## ✅ Features
 
