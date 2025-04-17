@@ -23,7 +23,7 @@ git clone https://github.com/Szafter12/react-components-cli.git
 ### 2. Navigate into the directory
 
 ```bash
-cd react-component-cli
+cd react-components-cli
 ```
 
 ### 3. Make the script executable
@@ -32,7 +32,7 @@ cd react-component-cli
 chmod +x react
 ```
 
-### 4. (Optional) Install it globally - This allows you to use the react command globally from anywhere in your terminal.
+### 4. Install it globally - This allows you to use the react command globally from anywhere in your terminal.
 
 ```bash
 sudo cp react /usr/local/bin/react
