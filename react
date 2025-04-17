@@ -1,0 +1,49 @@
+#!/bin/bash
+
+COMMAND=$1
+NAME=$2
+TYPE=$3
+
+case $COMMAND in 
+    make:component)
+        if [ -z "$NAME" ]; then
+            echo "Please provide a component name."
+            exit 1
+        fi
+
+        if [ -d "src/components/$NAME" ]; then
+            echo "Component $NAME already exists."
+            exit 1
+        fi
+
+        mkdir -p src/components/$NAME
+
+        if [ "$TYPE" == "--ts" ]; then
+            touch src/components/$NAME/$NAME.tsx
+            touch src/components/$NAME/$NAME.module.css
+
+            echo "import style from './$NAME.module.css';" >> src/components/$NAME/$NAME.tsx
+            echo "
+            " >> src/components/$NAME/$NAME.tsx
+            echo "export const $NAME = () => {" >> src/components/$NAME/$NAME.tsx
+            echo "  return ()" >> src/components/$NAME/$NAME.tsx
+            echo "}" >> src/components/$NAME/$NAME.tsx
+        else 
+            touch src/components/$NAME/$NAME.jsx
+            touch src/components/$NAME/$NAME.module.css
+            
+            echo "import style from './$NAME.module.css';" >> src/components/$NAME/$NAME.jsx
+            echo "
+            " >> src/components/$NAME/$NAME.jsx
+            echo "export const $NAME = () => {" >> src/components/$NAME/$NAME.jsx
+            echo "  return ()" >> src/components/$NAME/$NAME.jsx
+            echo "}" >> src/components/$NAME/$NAME.jsx
+        fi
+        ;;
+    *)
+        echo "Invalid command. Use 'make:component' to create a new component."
+        exit 1
+        ;;
+esac
+        echo "Component $NAME created successfully."
+        exit 0 
