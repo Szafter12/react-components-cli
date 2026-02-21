@@ -1,8 +1,8 @@
-# ⚛️ react — CLI for generating React components
+# react — CLI for generating React components
 
 A simple Bash script that helps you quickly create React components inside the `src/components` directory. Supports both JSX and TypeScript (TSX) with modular CSS.
 
-## ✅ Features
+## Features
 
 - Creates a folder `src/components/ComponentName`
 - Generates `ComponentName.jsx` or `ComponentName.tsx`
@@ -12,7 +12,7 @@ A simple Bash script that helps you quickly create React components inside the `
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -38,7 +38,7 @@ chmod +x react
 sudo cp react /usr/local/bin/react
 ```
 
-## 💡 Usage
+## Usage
 
 ### Create a JSX component
 
@@ -68,13 +68,13 @@ src/components/Button/
 └── Button.module.css
 ```
 
-## 🪟 Windows — How to use it?
+## Windows — How to use it?
 
 ### ✅ Requirements
 - [Git for Windows](https://git-scm.com/downloads/win)
 - Use Git Bash (installed automatically with Git)
 
-### ✅ Steps
+### Steps
 - Open Git Bash
 - Follow the installation steps (clone, make executable)
 - Open Git Bash and edit your .bashrc or .bash_profile:
